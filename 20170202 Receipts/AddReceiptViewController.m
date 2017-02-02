@@ -18,7 +18,6 @@
 @property (weak, nonatomic) IBOutlet UITextView *receiptNoteTextView;
 @property (nonatomic) ReceiptManager *manager;
 @property (nonatomic) NSArray *tagArray;
-@property (nonatomic) NSArray *receiptArray;
 
 @end
 
@@ -28,8 +27,13 @@
     [super viewDidLoad];
     self.manager = [ReceiptManager sharedManager];
     self.tagArray = [self getArrayWithKey:@"Tag" sort:@"tagName"];
-    self.receiptArray = [self getArrayWithKey:@"Receipt" sort:@"timeStamp"];
     self.tagTableView.allowsMultipleSelection = YES;
+    if (self.editReceipt) {
+        float amount = (float) self.editReceipt.amount;
+        self.receiptAmountTextField.text = @(amount/100).stringValue;
+        self.receiptNoteTextView.text = self.editReceipt.note;
+        self.receiptDatePicker.date = self.editReceipt.timeStamp;
+    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -48,6 +52,9 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [self.tagTableView dequeueReusableCellWithIdentifier:@"TagCell"];
     Tag *tag = self.tagArray[indexPath.row];
+    if ([self.editReceipt.tags containsObject:tag]) {
+        [self.tagTableView selectRowAtIndexPath:indexPath animated:YES scrollPosition:UITableViewScrollPositionNone];
+    }
     cell.textLabel.text = tag.tagName;
     return cell;
 }
@@ -55,6 +62,9 @@
 - (IBAction)saveButtonPress:(UIButton *)sender {
     NSManagedObjectContext *context = [self.manager getContext];
     Receipt *newReceipt = [NSEntityDescription insertNewObjectForEntityForName:@"Receipt" inManagedObjectContext:context];
+    if (self.editReceipt) {
+        newReceipt = self.editReceipt;
+    }
     double amount = [self.receiptAmountTextField.text doubleValue];
     NSInteger intAmount = amount*100;
     newReceipt.amount = intAmount;

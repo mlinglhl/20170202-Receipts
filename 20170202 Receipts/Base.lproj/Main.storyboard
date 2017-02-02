@@ -47,8 +47,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M8G-Lg-qjU">
-                                <rect key="frame" x="367" y="698" width="37" height="30"/>
-                                <state key="normal" title="Done"/>
+                                <rect key="frame" x="370" y="698" width="34" height="30"/>
+                                <state key="normal" title="Save"/>
                                 <connections>
                                     <action selector="addTagButton:" destination="pol-PS-chU" eventType="touchUpInside" id="xtK-xO-FKz"/>
                                 </connections>
@@ -128,9 +128,11 @@
                                                 <constraint firstItem="GRL-bX-oNf" firstAttribute="trailing" secondItem="W6j-MC-nWU" secondAttribute="trailingMargin" id="knN-7H-4qK"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <outlet property="amountLabel" destination="GRL-bX-oNf" id="uss-6X-eWX"/>
                                             <outlet property="noteLabel" destination="d0t-BC-lMN" id="j9X-0p-X2e"/>
+                                            <segue destination="evF-fG-nKb" kind="show" identifier="EditReceiptViewController" id="eYj-es-hUj"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -305,4 +307,7 @@
             <point key="canvasLocation" x="256.80000000000001" y="691.304347826087"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="eYj-es-hUj"/>
+    </inferredMetricsTieBreakers>
 </document>

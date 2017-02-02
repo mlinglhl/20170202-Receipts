@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+@class Receipt;
 
 @interface AddReceiptViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@property (nonatomic) Receipt *editReceipt;
 
 @end

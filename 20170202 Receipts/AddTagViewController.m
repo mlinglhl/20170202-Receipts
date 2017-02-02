@@ -25,7 +25,6 @@
     self.tagTableView.allowsMultipleSelection = YES;
     self.manager = [ReceiptManager sharedManager];
     self.tagArray = [self getTagArray];
-    // Do any additional setup after loading the view.
 }
 
 #pragma mark Add Tag Object
