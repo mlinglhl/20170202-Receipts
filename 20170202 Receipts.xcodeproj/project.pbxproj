@@ -9,11 +9,15 @@
 /* Begin PBXBuildFile section */
 		898A5C801E43935A006C2A81 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 898A5C7F1E43935A006C2A81 /* main.m */; };
 		898A5C831E43935A006C2A81 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 898A5C821E43935A006C2A81 /* AppDelegate.m */; };
-		898A5C861E43935A006C2A81 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 898A5C851E43935A006C2A81 /* ViewController.m */; };
 		898A5C891E43935A006C2A81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 898A5C871E43935A006C2A81 /* Main.storyboard */; };
 		898A5C8C1E43935A006C2A81 /* _0170202_Receipts.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 898A5C8A1E43935A006C2A81 /* _0170202_Receipts.xcdatamodeld */; };
 		898A5C8E1E43935A006C2A81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 898A5C8D1E43935A006C2A81 /* Assets.xcassets */; };
 		898A5C911E43935A006C2A81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 898A5C8F1E43935A006C2A81 /* LaunchScreen.storyboard */; };
+		898A5CB21E439A6F006C2A81 /* AddReceiptViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 898A5CB11E439A6F006C2A81 /* AddReceiptViewController.m */; };
+		898A5CB51E439E5E006C2A81 /* ReceiptManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 898A5CB41E439E5E006C2A81 /* ReceiptManager.m */; };
+		898A5CB81E43A65D006C2A81 /* AddTagViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 898A5CB71E43A65D006C2A81 /* AddTagViewController.m */; };
+		898A5CC11E43C844006C2A81 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 898A5CC01E43C844006C2A81 /* HomeViewController.m */; };
+		898A5CDC1E43E548006C2A81 /* HomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 898A5CDB1E43E548006C2A81 /* HomeTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,13 +25,29 @@
 		898A5C7F1E43935A006C2A81 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		898A5C811E43935A006C2A81 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		898A5C821E43935A006C2A81 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		898A5C841E43935A006C2A81 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		898A5C851E43935A006C2A81 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		898A5C881E43935A006C2A81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		898A5C8B1E43935A006C2A81 /* _0170202_Receipts.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = _0170202_Receipts.xcdatamodel; sourceTree = "<group>"; };
 		898A5C8D1E43935A006C2A81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		898A5C901E43935A006C2A81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		898A5C921E43935A006C2A81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		898A5CB01E439A6F006C2A81 /* AddReceiptViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddReceiptViewController.h; sourceTree = "<group>"; };
+		898A5CB11E439A6F006C2A81 /* AddReceiptViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddReceiptViewController.m; sourceTree = "<group>"; };
+		898A5CB31E439E5E006C2A81 /* ReceiptManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReceiptManager.h; sourceTree = "<group>"; };
+		898A5CB41E439E5E006C2A81 /* ReceiptManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReceiptManager.m; sourceTree = "<group>"; };
+		898A5CB61E43A65D006C2A81 /* AddTagViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddTagViewController.h; sourceTree = "<group>"; };
+		898A5CB71E43A65D006C2A81 /* AddTagViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddTagViewController.m; sourceTree = "<group>"; };
+		898A5CBF1E43C844006C2A81 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		898A5CC01E43C844006C2A81 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		898A5CCE1E43D940006C2A81 /* Tag+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Tag+CoreDataClass.h"; sourceTree = "<group>"; };
+		898A5CCF1E43D940006C2A81 /* Tag+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Tag+CoreDataClass.m"; sourceTree = "<group>"; };
+		898A5CD01E43D940006C2A81 /* Tag+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Tag+CoreDataProperties.h"; sourceTree = "<group>"; };
+		898A5CD11E43D940006C2A81 /* Tag+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Tag+CoreDataProperties.m"; sourceTree = "<group>"; };
+		898A5CD21E43D940006C2A81 /* Receipt+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Receipt+CoreDataClass.h"; sourceTree = "<group>"; };
+		898A5CD31E43D940006C2A81 /* Receipt+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Receipt+CoreDataClass.m"; sourceTree = "<group>"; };
+		898A5CD41E43D940006C2A81 /* Receipt+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Receipt+CoreDataProperties.h"; sourceTree = "<group>"; };
+		898A5CD51E43D940006C2A81 /* Receipt+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Receipt+CoreDataProperties.m"; sourceTree = "<group>"; };
+		898A5CDA1E43E548006C2A81 /* HomeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTableViewCell.h; sourceTree = "<group>"; };
+		898A5CDB1E43E548006C2A81 /* HomeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +64,14 @@
 		898A5C721E43935A006C2A81 = {
 			isa = PBXGroup;
 			children = (
+				898A5CCE1E43D940006C2A81 /* Tag+CoreDataClass.h */,
+				898A5CCF1E43D940006C2A81 /* Tag+CoreDataClass.m */,
+				898A5CD01E43D940006C2A81 /* Tag+CoreDataProperties.h */,
+				898A5CD11E43D940006C2A81 /* Tag+CoreDataProperties.m */,
+				898A5CD21E43D940006C2A81 /* Receipt+CoreDataClass.h */,
+				898A5CD31E43D940006C2A81 /* Receipt+CoreDataClass.m */,
+				898A5CD41E43D940006C2A81 /* Receipt+CoreDataProperties.h */,
+				898A5CD51E43D940006C2A81 /* Receipt+CoreDataProperties.m */,
 				898A5C7D1E43935A006C2A81 /* 20170202 Receipts */,
 				898A5C7C1E43935A006C2A81 /* Products */,
 			);
@@ -62,8 +90,16 @@
 			children = (
 				898A5C811E43935A006C2A81 /* AppDelegate.h */,
 				898A5C821E43935A006C2A81 /* AppDelegate.m */,
-				898A5C841E43935A006C2A81 /* ViewController.h */,
-				898A5C851E43935A006C2A81 /* ViewController.m */,
+				898A5CBF1E43C844006C2A81 /* HomeViewController.h */,
+				898A5CC01E43C844006C2A81 /* HomeViewController.m */,
+				898A5CDA1E43E548006C2A81 /* HomeTableViewCell.h */,
+				898A5CDB1E43E548006C2A81 /* HomeTableViewCell.m */,
+				898A5CB01E439A6F006C2A81 /* AddReceiptViewController.h */,
+				898A5CB11E439A6F006C2A81 /* AddReceiptViewController.m */,
+				898A5CB61E43A65D006C2A81 /* AddTagViewController.h */,
+				898A5CB71E43A65D006C2A81 /* AddTagViewController.m */,
+				898A5CB31E439E5E006C2A81 /* ReceiptManager.h */,
+				898A5CB41E439E5E006C2A81 /* ReceiptManager.m */,
 				898A5C871E43935A006C2A81 /* Main.storyboard */,
 				898A5C8D1E43935A006C2A81 /* Assets.xcassets */,
 				898A5C8F1E43935A006C2A81 /* LaunchScreen.storyboard */,
@@ -153,9 +189,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				898A5C861E43935A006C2A81 /* ViewController.m in Sources */,
+				898A5CB21E439A6F006C2A81 /* AddReceiptViewController.m in Sources */,
+				898A5CB51E439E5E006C2A81 /* ReceiptManager.m in Sources */,
+				898A5CDC1E43E548006C2A81 /* HomeTableViewCell.m in Sources */,
 				898A5C831E43935A006C2A81 /* AppDelegate.m in Sources */,
+				898A5CB81E43A65D006C2A81 /* AddTagViewController.m in Sources */,
 				898A5C801E43935A006C2A81 /* main.m in Sources */,
+				898A5CC11E43C844006C2A81 /* HomeViewController.m in Sources */,
 				898A5C8C1E43935A006C2A81 /* _0170202_Receipts.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -313,6 +353,7 @@
 				898A5C971E43935A006C2A81 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

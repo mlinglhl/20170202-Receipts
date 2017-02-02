@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  AddTagViewController.h
 //  20170202 Receipts
 //
 //  Created by Minhung Ling on 2017-02-02.
@@ -7,11 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <CoreData/CoreData.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
+@interface AddTagViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
 @end
-
